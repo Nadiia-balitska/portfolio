@@ -1,0 +1,118 @@
+:root{
+  --bg: #0b0c10;
+  --muted-bg: #0f1117;
+  --fg: #e8e8e8;
+  --muted: #a7b0c0;
+  --brand: #4da3ff;
+  --brand-2:#9b7bff;
+  --card:#111318;
+  --ok:#31c48d;
+  --warn:#ffb020;
+  --err:#ef4e4e;
+  --radius: 16px;
+  --shadow: 0 6px 24px rgba(0,0,0,.25);
+}
+[data-theme="light"]{
+  --bg:#f7f8fb; --muted-bg:#ffffff; --fg:#111316; --muted:#475063; --card:#ffffff; --shadow: 0 6px 24px rgba(8,15,30,.08);
+}
+html,body{height:100%;}
+body{
+  margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color:var(--fg); background: radial-gradient(1200px 800px at 90% -10%, rgba(77,163,255,.10), transparent 60%),
+                    radial-gradient(1000px 600px at -10% 110%, rgba(155,123,255,.10), transparent 60%),
+                    var(--bg);
+}
+a{color:var(--brand); text-decoration: none}
+a:hover{text-decoration: underline}
+.container{max-width:1100px; margin-inline:auto; padding: 24px;}
+header{
+  position: sticky; top:0; z-index:5; backdrop-filter: blur(10px);
+  background: color-mix(in oklab, var(--bg), transparent 65%);
+  border-bottom: 1px solid color-mix(in oklab, var(--fg), transparent 92%);
+}
+.nav{display:flex; align-items:center; gap:8px; justify-content:space-between}
+.nav .left{display:flex; align-items:center; gap:14px}
+.brand{font-weight:700; letter-spacing:.2px}
+.chip{font-size:12px; padding:2px 8px; border-radius:999px; background:linear-gradient(90deg,var(--brand),var(--brand-2)); color:white}
+.nav a{padding:10px 12px; border-radius:10px}
+.nav a[aria-current="page"]{background: color-mix(in oklab, var(--brand), transparent 85%);}
+.row{display:grid; grid-template-columns: 1fr auto; gap: 20px; align-items:center}
+.hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:32px; padding-block: 36px}
+.card{background:var(--card); border:1px solid color-mix(in oklab, var(--fg), transparent 90%); border-radius: var(--radius); box-shadow: var(--shadow)}
+.card.pad{padding:22px}
+.title{font-size: clamp(28px, 3.2vw, 44px); line-height:1.2; margin:0}
+.muted{color:var(--muted)}
+.grid{display:grid; gap:18px}
+.grid.cols-3{grid-template-columns: repeat(3, 1fr)}
+.grid.cols-2{grid-template-columns: repeat(2, 1fr)}
+@media (max-width: 960px){
+  .hero{grid-template-columns: 1fr}
+  .grid.cols-3{grid-template-columns: 1fr;}
+  .grid.cols-2{grid-template-columns: 1fr;}
+}
+.project{
+  display:grid; grid-template-rows: 160px auto; overflow:hidden
+}
+.thumb{width:100%; height:100%; max-height: 150px; object-fit:cover; background:#111; display:block}
+.project .meta{padding:16px}
+.pill{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius: 999px; background: color-mix(in oklab, var(--brand), transparent 85%);}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid color-mix(in oklab, var(--fg), transparent 90%); background:var(--muted-bg); color:var(--fg); cursor:pointer}
+.btn:hover{filter:brightness(1.05)}
+.btn.primary{background: linear-gradient(90deg, var(--brand), var(--brand-2)); color:white; border:none}
+.btn.ghost{background: transparent}
+.btn.small{padding:6px 10px; font-size: 14px}
+.flex{display:flex; gap:10px; align-items:center; flex-wrap: wrap}
+.kpis{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
+.kpi{padding:14px; border-radius:14px; border:1px dashed color-mix(in oklab, var(--fg), transparent 85%)}
+footer{padding:40px 0; color:var(--muted)}
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0, 0, 0, 0); white-space:nowrap; border:0}
+/* Dialog */
+dialog{border:none; border-radius: 18px; padding:0; background:var(--card); color:var(--fg); box-shadow: var(--shadow); width:min(720px, 96vw)}
+dialog::backdrop{background: rgba(0,0,0,.4)}
+.dialog-head{padding:16px 20px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid color-mix(in oklab, var(--fg), transparent 90%)}
+.dialog-body{padding:18px 20px}
+.list{display:grid; gap:10px}
+.list a{display:flex; justify-content:space-between; align-items:center; border:1px solid color-mix(in oklab, var(--fg), transparent 90%); padding:12px 14px; border-radius:12px}
+.badge{font-size:12px; padding:2px 8px; border-radius:999px; background:color-mix(in oklab, var(--ok), transparent 75%); color: color-mix(in oklab, var(--ok), black 40%)}
+/* --- Contact form glow --- */
+.form-wrap { display:grid; gap:14px; }
+.field { display:grid; gap:6px; }
+
+.input {
+  position: relative;
+  display:flex; align-items:center;
+  border:1px solid color-mix(in oklab, var(--fg), transparent 88%);
+  background: linear-gradient(180deg, color-mix(in oklab, var(--muted-bg), transparent 30%), var(--card));
+  border-radius:14px; padding:10px 12px; box-shadow: var(--shadow);
+}
+.input:focus-within {
+  outline: 2px solid color-mix(in oklab, var(--brand), transparent 70%);
+  outline-offset: 2px;
+  border-color: color-mix(in oklab, var(--brand), transparent 70%);
+}
+
+.input .lead {
+  margin-right:10px; opacity:.9; font-size:18px;
+}
+
+.input input,
+.input textarea {
+  width:100%; border:none; background:transparent; color:var(--fg);
+  font: inherit; outline: none;
+}
+.input input::placeholder,
+.input textarea::placeholder { color: color-mix(in oklab, var(--fg), transparent 60%); }
+
+.btn.primary.grad {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  color:#fff; border:none; box-shadow: var(--shadow);
+}
+.btn.primary.grad:active { transform: translateY(1px); }
+
+.help { font-size:12px; color: var(--muted); margin-top:-2px; }
+
+.pad-1{
+  max-height: 300px;
+}
+/* Print */
+@media print{ header, .router, .no-print{display:none !important} body{background:white} .card, .kpi, .project{box-shadow:none; border:1px solid #e5e7eb}}

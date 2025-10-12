@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Портфоліо Надії Баліцької — Frontend/Full‑stack Developer. Проєкти: Rainydays (Cross Course), JavaScript 1, Semester Project 1." />
+  <title>Nadiia Balitska — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a href="#main" class="sr-only">Перейти до контенту</a>
+  <header class="">
+    <div class="container nav">
+      <div class="left">
+        <div class="brand">Nadiia Balitska  <span class="chip" aria-hidden>My Portfolio</span></div>
+        <nav class="router" aria-label="Primary">
+          <a href="#/home" data-route>Home</a>
+          <a href="#/about" data-route>About</a>
+          <a href="#/projects" data-route>Projects</a>
+          <!-- <a href="#/docs" data-route>Docs</a> -->
+          <a href="#/contact" data-route>Contact</a>
+        </nav>
+      </div>
+      <div class="right flex">
+        <button id="theme" class="btn small" aria-pressed="false" title="Toggle theme">🌙 Theme</button>
+        <a id="githubLink" class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="view" aria-live="polite"></section>
+  </main>
+
+  <footer class="container">
+    <div class="row">
+      <small>© <span id="yr"></span> Nadiia Balitska. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <dialog id="projDialog" aria-label="Project Links">
+    <div class="dialog-head">
+      <strong id="dlgTitle">Project</strong>
+      <button class="btn small ghost" onclick="dlg.close()" aria-label="Close">✕</button>
+    </div>
+    <div class="dialog-body">
+      <div class="list" id="dlgList"></div>
+    </div>
+  </dialog>
+
+  <script src="./main.js"></script>
+</body>
+</html>
