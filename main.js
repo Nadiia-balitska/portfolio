@@ -40,7 +40,7 @@ const CONFIG = {
       teaser: "Landing web-page, where you can see information about muzeum ",
       thumb: "./assets/muzeum.jpg",
       repo: "https://github.com/Nadiia-balitska/noroff-semester-project-muzeum",
-      live: "https://nadiia-balitska.github.io/javascript1/",
+      live: "https://nadiia-balitska.github.io/noroff-semester-project-muzeum/",
     
       tech:["HTML","CSS","JS","Fetch"],
     },
