@@ -72,7 +72,7 @@ const CONFIG = {
       title: "Team project water track",
       teaser: "Web-app where you can track your water consumption",
       thumb: "./assets/water_track.jpg",
-      repo: "Private",
+      repo: "https://github.com/LigerCode3443/AquaTrack",
       live: "https://aqua-track.netlify.app",
       back: "https://github.com/defaultnastia/water-tracker-be",
     
@@ -254,7 +254,7 @@ return `
 <h2>About Me</h2>
 <div class="grid cols-2">
 <div class="card pad">
-<p>I'm <strong>${CONFIG.owner.name}</strong>, a passionate <strong>Full‑stack Developer</strong> based in Molde, Norway. I enjoy creating clean, accessible, and user‑focused web applications that combine thoughtful design with solid technical architecture.</p>
+<p>I'm <strong>${CONFIG.owner.name}</strong>, a passionate <strong>Full‑stack Developer</strong> based in Oslo, Norway. I enjoy creating clean, accessible, and user‑focused web applications that combine thoughtful design with solid technical architecture.</p>
 <p>My educational journey started at <strong>National Transport University (Ukraine)</strong>. I continued at <strong>Noroff School of Technology and Digital Media</strong> and I'm currently pursuing <strong>Information Technology at Oslomet University</strong>.</p>
 <p>To strengthen my practical skills, I completed a <strong>6‑month Full‑stack Development Bootcamp</strong>, <strong>SoftServe’s Front‑end Project‑Based Learning</strong>, and <strong>Hillel IT School’s Deep Node.js</strong>. These programs gave me hands‑on experience with modern tools and teamwork in agile environments.</p>
 </div>
