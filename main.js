@@ -255,7 +255,7 @@ return `
 <div class="grid cols-2">
 <div class="card pad">
 <p>I'm <strong>${CONFIG.owner.name}</strong>, a passionate <strong>Full‑stack Developer</strong> based in Oslo, Norway. I enjoy creating clean, accessible, and user‑focused web applications that combine thoughtful design with solid technical architecture.</p>
-<p>My educational journey started at <strong>National Transport University (Ukraine)</strong>. I continued at <strong>Noroff School of Technology and Digital Media</strong> and I'm currently pursuing <strong>Information Technology at Oslomet University</strong>.</p>
+<p>My educational journey started at <strong>National Transport University (Ukraine)</strong>. I continued at <strong>Noroff School of Technology and Digital Media</strong> and I'm currently pursuing <strong>Information Technology at OsloMet University</strong>.</p>
 <p>To strengthen my practical skills, I completed a <strong>6‑month Full‑stack Development Bootcamp</strong>, <strong>SoftServe’s Front‑end Project‑Based Learning</strong>, and <strong>Hillel IT School’s Deep Node.js</strong>. These programs gave me hands‑on experience with modern tools and teamwork in agile environments.</p>
 </div>
 <div class="card pad">
@@ -282,6 +282,7 @@ return `
 <li> Redux, Zustand</li>
 <li>Tailwind CSS</li>
 <li>Prebid.js</li>
+
 </ul>
 </div>
 <div>
@@ -298,6 +299,15 @@ return `
 <ul>
 <li>MongoDB</li>
 <li>ClickHouse</li>
+</ul>
+</div>
+<div>
+<h4>Other</h4>
+<ul>
+<li>Git</li>
+<li>Figma</li>
+<li>Vite</li>
+<li>Railway, Render, Vercel</li>
 </ul>
 </div>
 </div>
