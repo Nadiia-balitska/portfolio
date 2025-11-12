@@ -304,8 +304,9 @@ return `
 <div>
 <h4>Other</h4>
 <ul>
-<li>Git</li>
-<li>Figma</li>
+<li>Docker</li>
+<li>Git,CI/CD</li>
+<li>Figma, wireframe and prototyping</li>
 <li>Vite</li>
 <li>Railway, Render, Vercel</li>
 </ul>
