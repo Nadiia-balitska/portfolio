@@ -220,7 +220,7 @@ return `
 <div class="meta">
 <div class="flex" style="justify-content:space-between; align-items:center">
 <h3 id="h-${p.key}" style="margin:0">${p.title}</h3>
-<span class="muted">${p.course ?? ''}</span>
+<span class="muted course_title">${p.course ?? ''}</span>
 </div>
 <p class="muted" style="margin:.2rem 0 1rem">${p.teaser ?? ''}</p>
 <div class="flex" style="margin-bottom:10px">${tech}</div>

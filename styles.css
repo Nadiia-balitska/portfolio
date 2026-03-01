@@ -116,3 +116,9 @@ dialog::backdrop{background: rgba(0,0,0,.4)}
 }
 /* Print */
 @media print{ header, .router, .no-print{display:none !important} body{background:white} .card, .kpi, .project{box-shadow:none; border:1px solid #e5e7eb}}
+
+
+.course_title{
+  color: #0b0c10;
+  font-weight: bold;
+}
