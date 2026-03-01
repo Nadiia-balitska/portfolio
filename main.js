@@ -204,7 +204,7 @@ return `
 <div class="card pad">
 <h3>Quick Links</h3>
 <div class="list">
-${CONFIG.projects.map(p => `<a href="#/projects#${p.key}"><span>${p.title}</span><span class="badge">Updated</span></a>`).join('')}
+${CONFIG.projects.map(p => `<a href="${p.repo}"><span>${p.title}</span><span class="badge">Updated</span></a>`).join('')}
 </div>
 </div>
 </div>
