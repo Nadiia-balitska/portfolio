@@ -42,7 +42,7 @@ const CONFIG = {
       teaser: "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
       thumb: "./assets/bidmatic_intership.jpg",
       repo: "https://github.com/Nadiia-balitska/adtelligent_front",
-      live: "https://adtelligent-front.vercel.app",
+      // live: "https://adtelligent-front.vercel.app",
       back: "https://github.com/Nadiia-balitska/adtelligent_back",
     
       tech:["HTML","CSS","JS", "React", "Type Script", "Tailwind", "Zustand", "Node.js", "Fastify.js", "Prebid.js"]
@@ -65,7 +65,7 @@ const CONFIG = {
       teaser: "Tech Store where you can buy different technology",
       thumb: "./assets/exam_project.jpg",
       repo: "https://github.com/Nadiia-balitska/noroff_exam_project_1",
-      live: "need to be cloned",
+      // live: "need to be cloned",
     
       tech:["HTML","CSS","JS","Fetch", "Swagger API"],
     },
@@ -98,7 +98,7 @@ const CONFIG = {
       teaser: "Web-based result management system which allows students, teachers, and admins to view, update, and manage academic records efficiently",
       thumb: "./assets/eduGate.png",
       repo: "https://github.com/NoroffFEU/edu-gate-oct24ft",
-      live: "need to be cloned first",    
+      // live: "need to be cloned first",    
       tech:["HTML","CSS","JS"]
     },
     {
@@ -214,6 +214,8 @@ ${CONFIG.projects.map(p => `<a href="#/projects#${p.key}"><span>${p.title}</span
 function projCard(p){
 const tech = p.tech?.map(t=>`<span class="pill" aria-label="Tech">${t}</span>`).join(' ') || '';
 const backendBtn = p.back ? `<a class="btn" href="${p.back}" target="_blank" rel="noopener">Backend</a>` : '';
+const liveBtn = p.live ? `<a class="btn primary" href="${p.live}" target="_blank" rel="noopener">Live Demo</a>` : '';
+
 return `
 <article class="card project" id="${p.key}" aria-labelledby="h-${p.key}">
 <img class="thumb" loading="lazy" src="${p.thumb}" alt="${p.title} thumbnail"/>
@@ -226,7 +228,7 @@ return `
 <div class="flex" style="margin-bottom:10px">${tech}</div>
 <div class="flex">
 <a class="btn" href="${p.repo}" target="_blank" rel="noopener">GitHub Repo</a>
-<a class="btn primary" href="${p.live}" target="_blank" rel="noopener">Live Demo</a>
+${liveBtn}
 ${backendBtn}
 </div>
 </div>
