@@ -4,7 +4,6 @@ const CONFIG = {
     title: "Junior Full‑stack Developer",
     location: "Oslo, Norway",
     email: "balitskanadia2@gmail.com",
-    phone: "+47 968 34 875",
     github: "https://github.com/Nadiia-balitska",
     linkedin: "https://www.linkedin.com/in/nadiia-balitska/", 
     cvURL: "./docs/Nadia_cv.pdf", 
@@ -22,6 +21,28 @@ const CONFIG = {
       live: "need to be cloned",
     
       tech:["HTML","CSS","JS","Fetch", "Swagger API"],
+    },
+    {
+      key: "javascript2",
+      course: "Noroff",
+      title: "Social Media",
+      teaser: "You can brows different posts and make your own",
+      thumb: "./assets/socialNews.png",
+      repo: "https://github.com/Nadiia-balitska/JS2-noroff-assigm",
+      live: "https://js-2-noroff-assigm-z2yo.vercel.app/post/index.html",
+    
+      tech:["JS", "Taillwind", "Noroff API"],
+    },
+       {
+      key: "semesterProject2",
+      course: "Noroff",
+      title: "AuctionLite",
+      teaser: "Online Auction Platform",
+      thumb: "./assets/auctionLite.png",
+      repo: "https://github.com/Nadiia-balitska/semester-prj2-noroff",
+      live: "https://semester-prj2-noroff.vercel.app",
+    
+      tech:["JS", "Taillwind", "Noroff API"],
     },
     {
       key: "GameHub",
