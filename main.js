@@ -11,6 +11,53 @@ const CONFIG = {
     telegram: "https://t.me/nadiia_balitska",
   },
   projects: [
+     {
+      key: "Soft Serve project",
+      course: "Soft Serve ",
+      title: "Soft Serve project Space-to-Study ",
+      teaser: "Studying enviroment where both students and teachers can find themselv",
+      thumb: "./assets/spase_to_study.jpg",
+      repo: "https://github.com/Nadiia-balitska/Project-SS",
+      live: "https://project-ss-sooty.vercel.app",
+      back: "https://github.com/Nadiia-balitska/BackEnd-SS-project",
+    
+      tech:["HTML","CSS","JS", "React", "Redux", "Type Script", "Node.js", "Express.js"]
+    },
+        {
+      key: "Team project water track",
+      course: "Bootcamp Team Project",
+      title: "Team project water track",
+      teaser: "Web-app where you can track your water consumption",
+      thumb: "./assets/water_track.jpg",
+      repo: "https://github.com/LigerCode3443/AquaTrack",
+      live: "https://aqua-track.netlify.app",
+      back: "https://github.com/defaultnastia/water-tracker-be",
+    
+      tech:["HTML","CSS","JS", "React", "Type Script", "Redux", "Node.js", "Express.js"]
+    },
+       {
+      key: "Inteship project",
+      course: "Adtelliget org. Bidmatic",
+      title: "Intership project",
+      teaser: "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
+      thumb: "./assets/bidmatic_intership.jpg",
+      repo: "https://github.com/Nadiia-balitska/adtelligent_front",
+      live: "https://adtelligent-front.vercel.app",
+      back: "https://github.com/Nadiia-balitska/adtelligent_back",
+    
+      tech:["HTML","CSS","JS", "React", "Type Script", "Tailwind", "Zustand", "Node.js", "Fastify.js", "Prebid.js"]
+    },
+       {
+      key: "money-guard",
+      course: "Bootcamp Project",
+      title: "Bootcamp project money guard",
+      teaser: "Web application for tracking personal finances with user authentication, transaction management, and data visualization.",
+      thumb: "./assets/moneu_guard.jpg",
+      repo: "https://github.com/Nadiia-balitska/money-guard",
+      live: "https://money-guard-ten.vercel.app",
+    
+      tech:["HTML","CSS","JS", "React", "Redux"],
+    },
     {
       key: "exam-project",
       course: "Noroff",
@@ -44,28 +91,7 @@ const CONFIG = {
     
       tech:["JS", "Taillwind", "Noroff API"],
     },
-    {
-      key: "GameHub",
-      course: "Noroff",
-      title: "GameHub - store for games",
-      teaser: "E‑commerce storefront with product cards, cart, and responsive UI.",
-      thumb: "./assets/gamehub.jpg",
-      repo: "https://github.com/Nadiia-balitska/game-hub-noroff-assigment",
-      live: "https://nadiia-balitska.github.io/game-hub-noroff-assigment/",
-      tech:["HTML","CSS","JS", "Fetch"],
-    },
-    {
-      key: "javascript1",
-      course: "Noroff",
-      title: "Muzeum landing web app",
-      teaser: "Landing web-page, where you can see information about muzeum ",
-      thumb: "./assets/muzeum.jpg",
-      repo: "https://github.com/Nadiia-balitska/noroff-semester-project-muzeum",
-      live: "https://nadiia-balitska.github.io/noroff-semester-project-muzeum/",
-    
-      tech:["HTML","CSS","JS","Fetch"],
-    },
-      {
+        {
       key: "Team semester project",
       course: "Noroff",
       title: "Semester Project Edugate school",
@@ -76,54 +102,15 @@ const CONFIG = {
       tech:["HTML","CSS","JS"]
     },
     {
-      key: "Soft Serve project",
-      course: "Soft Serve ",
-      title: "Soft Serve project Space-to-Study ",
-      teaser: "Studying enviroment where both students and teachers can find themselv",
-      thumb: "./assets/spase_to_study.jpg",
-      repo: "https://github.com/Nadiia-balitska/Project-SS",
-      live: "https://project-ss-sooty.vercel.app",
-      back: "https://github.com/Nadiia-balitska/BackEnd-SS-project",
-    
-      tech:["HTML","CSS","JS", "React", "Redux", "Type Script", "Node.js", "Express.js"]
+      key: "GameHub",
+      course: "Noroff",
+      title: "GameHub - store for games",
+      teaser: "E‑commerce storefront with product cards, cart, and responsive UI.",
+      thumb: "./assets/gamehub.jpg",
+      repo: "https://github.com/Nadiia-balitska/game-hub-noroff-assigment",
+      live: "https://nadiia-balitska.github.io/game-hub-noroff-assigment/",
+      tech:["HTML","CSS","JS", "Fetch"],
     },
-      {
-      key: "Team project water track",
-      course: "Bootcamp Team Project",
-      title: "Team project water track",
-      teaser: "Web-app where you can track your water consumption",
-      thumb: "./assets/water_track.jpg",
-      repo: "https://github.com/LigerCode3443/AquaTrack",
-      live: "https://aqua-track.netlify.app",
-      back: "https://github.com/defaultnastia/water-tracker-be",
-    
-      tech:["HTML","CSS","JS", "React", "Type Script", "Redux", "Node.js", "Express.js"]
-    },
-     {
-      key: "Inteship project",
-      course: "Adtelliget org. Bidmatic",
-      title: "Intership project",
-      teaser: "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
-      thumb: "./assets/bidmatic_intership.jpg",
-      repo: "https://github.com/Nadiia-balitska/adtelligent_front",
-      live: "https://adtelligent-front.vercel.app",
-      back: "https://github.com/Nadiia-balitska/adtelligent_back",
-    
-      tech:["HTML","CSS","JS", "React", "Type Script", "Tailwind", "Zustand", "Node.js", "Fastify.js", "Prebid.js"]
-    },
-     {
-      key: "money-guard",
-      course: "Bootcamp Project",
-      title: "Bootcamp project money guard",
-      teaser: "Web application for tracking personal finances with user authentication, transaction management, and data visualization.",
-      thumb: "./assets/moneu_guard.jpg",
-      repo: "https://github.com/Nadiia-balitska/money-guard",
-      live: "https://money-guard-ten.vercel.app",
-    
-      tech:["HTML","CSS","JS", "React", "Redux"],
-    },
-   
-   
        {
       key: "portfolio",
       course: "Bootcamp Team Project",
