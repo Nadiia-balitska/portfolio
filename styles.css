@@ -119,6 +119,6 @@ dialog::backdrop{background: rgba(0,0,0,.4)}
 
 
 .course_title{
-  color: #0b0c10;
+  color: linear-gradient(90deg, var(--brand), var(--brand-2));
   font-weight: bold;
 }
