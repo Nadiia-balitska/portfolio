@@ -314,6 +314,8 @@ return `
 <div>
 <h4>Other</h4>
 <ul>
+<li>Python (data analysis) </li>
+<li>Java</li>
 <li>Docker</li>
 <li>Git,CI/CD</li>
 <li>Figma, wireframe and prototyping</li>
