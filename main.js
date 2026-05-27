@@ -11,6 +11,18 @@ const CONFIG = {
     telegram: "https://t.me/nadiia_balitska",
   },
   projects: [
+       {
+      key: "ActiveUnity — Full-Stack Event Management Platform",
+      course: "National Transport University",
+      title: "ActiveUnity — Full-Stack Event Management Platform",
+      teaser: "A platform for managing events with real-time collaboration features.",
+      thumb: "./assets/active_unity.png",
+      repo: "https://github.com/Nadiia-balitska/activeunity-frontend",
+      live: "https://activeunity-frontend.vercel.app/",
+      back: "https://github.com/Nadiia-balitska/activeunity-backend",
+    
+      tech:["JS/TS", "Next.js", "Zustand", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Taillwind"]
+    },
      {
       key: "Soft Serve project",
       course: "Soft Serve ",
