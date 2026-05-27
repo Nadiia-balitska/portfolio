@@ -377,40 +377,7 @@ function tplContact(){
         </div>
       </div>
 
-      <div class="card pad">
-        <h3>Send a message</h3>
-        <form id="contactForm" class="form-wrap" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <div class="input">
-              <span class="lead" aria-hidden>👤</span>
-              <input id="name" name="name" required minlength="2" placeholder="Your name" aria-required="true">
-            </div>
-            <div class="help">Introduce yourself so I can address you properly.</div>
-          </div>
-
-          <div class="field">
-            <label for="email">Email</label>
-            <div class="input">
-              <span class="lead" aria-hidden>✉️</span>
-              <input id="email" type="email" name="email" required placeholder="you@example.com" aria-required="true">
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="message">Message</label>
-            <div class="input">
-              <span class="lead" aria-hidden>💬</span>
-              <textarea id="message" name="message" required minlength="10" rows="4" placeholder="How can I help?" aria-required="true"></textarea>
-            </div>
-          </div>
-
-          <div class="flex">
-            <button id="sendBtn" class="btn primary grad">Send</button>
-            <span id="formNote" class="muted" role="status" aria-live="polite"></span>
-          </div>
-        </form>
-      </div>
+  
     </div>`;
 }
 
