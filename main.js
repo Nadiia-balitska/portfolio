@@ -5,38 +5,58 @@ const CONFIG = {
     location: "Oslo, Norway",
     email: "balitskanadia2@gmail.com",
     github: "https://github.com/Nadiia-balitska",
-    linkedin: "https://www.linkedin.com/in/nadiia-balitska/", 
-    cvURL: "./docs/Nadia_cv.pdf", 
+    linkedin: "https://www.linkedin.com/in/nadiia-balitska/",
+    cvURL: "./docs/Nadia_cv.pdf",
     coverURL: "./docs/cover_letter.pdf",
     telegram: "https://t.me/nadiia_balitska",
   },
   projects: [
-
-       {
+    {
       key: "NTU_bachelor, JavaScript_framework_noroff ",
-      course: "National Transport University,  Noroff School of Technology and Digital Media School of Technology and Digital Media",
+      course:
+        "National Transport University,  Noroff School of Technology and Digital Media School of Technology and Digital Media",
       title: "ActiveUnity — Full-Stack Event Management Platform",
-      teaser: "A platform for managing events with real-time collaboration features.",
+      teaser:
+        "A platform for managing events with real-time collaboration features.",
       thumb: "./assets/active_unity.png",
       repo: "https://github.com/Nadiia-balitska/activeunity-frontend",
       live: "https://activeunity-frontend.vercel.app/",
       back: "https://github.com/Nadiia-balitska/activeunity-backend",
-    
-      tech:["JS/TS", "Next.js", "Zustand", "Node.js", "Express.js", "MongoDB", "Cloudinary", "Taillwind"]
+
+      tech: [
+        "JS/TS",
+        "Next.js",
+        "Zustand",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Cloudinary",
+        "Taillwind",
+      ],
     },
-     {
+    {
       key: "Soft Serve project",
       course: "Soft Serve ",
       title: "Soft Serve project Space-to-Study ",
-      teaser: "Studying enviroment where both students and teachers can find themselv",
+      teaser:
+        "Studying enviroment where both students and teachers can find themselv",
       thumb: "./assets/spase_to_study.jpg",
       repo: "https://github.com/Nadiia-balitska/Project-SS",
       live: "https://project-ss-sooty.vercel.app",
       back: "https://github.com/Nadiia-balitska/BackEnd-SS-project",
-    
-      tech:["HTML","CSS","JS", "React", "Redux", "Type Script", "Node.js", "Express.js"]
+
+      tech: [
+        "HTML",
+        "CSS",
+        "JS",
+        "React",
+        "Redux",
+        "Type Script",
+        "Node.js",
+        "Express.js",
+      ],
     },
-        {
+    {
       key: "Team project water track",
       course: "Bootcamp Team Project",
       title: "Team project water track",
@@ -45,54 +65,82 @@ const CONFIG = {
       repo: "https://github.com/LigerCode3443/AquaTrack",
       live: "https://aqua-track.netlify.app",
       back: "https://github.com/defaultnastia/water-tracker-be",
-    
-      tech:["HTML","CSS","JS", "React", "Type Script", "Redux", "Node.js", "Express.js"]
+
+      tech: [
+        "HTML",
+        "CSS",
+        "JS",
+        "React",
+        "Type Script",
+        "Redux",
+        "Node.js",
+        "Express.js",
+      ],
     },
-           {
+    {
       key: "project_exam2",
       course: "Noroff School of Technology and Digital Media",
       title: "Holidaze is a venue booking application",
-      teaser: "The application allows customers to discover and book venues, while venue managers can create, edit and manage their own listings and view upcoming bookings.",
+      teaser:
+        "The application allows customers to discover and book venues, while venue managers can create, edit and manage their own listings and view upcoming bookings.",
       thumb: "./assets/holidaze.png",
       repo: "https://github.com/Nadiia-balitska/holidaze_noroff",
       live: "https://holidaze-noroff.vercel.app",
-    
-      tech:["JS/TS", "React.js", "Cloudinary", "Taillwind"]
+
+      tech: ["JS/TS", "React.js", "Cloudinary", "Taillwind"],
     },
-  
-       {
+
+    {
       key: "money-guard",
       course: "Bootcamp Project",
       title: "Bootcamp project money guard",
-      teaser: "Web application for tracking personal finances with user authentication, transaction management, and data visualization.",
+      teaser:
+        "Web application for tracking personal finances with user authentication, transaction management, and data visualization.",
       thumb: "./assets/moneu_guard.jpg",
       repo: "https://github.com/Nadiia-balitska/money-guard",
       live: "https://money-guard-ten.vercel.app",
-    
-      tech:["HTML","CSS","JS", "React", "Redux"],
+
+      tech: ["HTML", "CSS", "JS", "React", "Redux"],
     },
-         {
+    {
       key: "Inteship project",
       course: "Adtelliget org. Bidmatic",
       title: "Intership project",
-      teaser: "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
+      teaser:
+        "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
       thumb: "./assets/bidmatic_intership.jpg",
       repo: "https://github.com/Nadiia-balitska/adtelligent_front",
       // live: "https://adtelligent-front.vercel.app",
       back: "https://github.com/Nadiia-balitska/adtelligent_back",
-    
-      tech:["HTML","CSS","JS", "React", "Type Script", "Tailwind", "Zustand", "Node.js", "Fastify.js", "Prebid.js"]
+
+      tech: [
+        "HTML",
+        "CSS",
+        "JS",
+        "React",
+        "Type Script",
+        "Tailwind",
+        "Zustand",
+        "Node.js",
+        "Fastify.js",
+        "Prebid.js",
+      ],
     },
-        {
+    {
       key: "javascript2, css_frameworks",
       course: " Noroff School of Technology and Digital Media",
       title: "Social Media",
-      teaser: "You can brows different posts and make your own like in social media",
+      teaser:
+        "You can brows different posts and make your own like in social media",
       thumb: "./assets/socialNews.png",
-      repo: "https://github.com/Nadiia-balitska/JS2- Noroff School of Technology and Digital Media-assigm",
-      live: "https://js-2- Noroff School of Technology and Digital Media-assigm-z2yo.vercel.app/post/index.html",
-    
-      tech:["JS", "Taillwind", " Noroff School of Technology and Digital Media API"],
+      repo: "https://github.com/Nadiia-balitska/JS2-noroff-assigm",
+      live: "https://js-2-noroff-assigm-z2yo.vercel.app/post/index.html",
+
+      tech: [
+        "JS",
+        "Taillwind",
+        " Noroff School of Technology and Digital Media API",
+      ],
     },
     {
       key: "exam-project1",
@@ -100,44 +148,46 @@ const CONFIG = {
       title: "Premium Tech Store",
       teaser: "Tech Store where you can buy different technology",
       thumb: "./assets/exam_project.jpg",
-      repo: "https://github.com/Nadiia-balitska/ Noroff School of Technology and Digital Media_exam_project_1",
+      repo: "https://github.com/Nadiia-balitska/noroff_exam_project_1",
       // live: "need to be cloned",
-    
-      tech:["HTML","CSS","JS","Fetch", "Swagger API"],
+
+      tech: ["HTML", "CSS", "JS", "Fetch", "Swagger API"],
     },
 
-       {
+    {
       key: "semesterProject2",
       course: " Noroff School of Technology and Digital Media",
       title: "AuctionLite",
       teaser: "Online Auction Platform",
       thumb: "./assets/auctionLite.png",
-      repo: "https://github.com/Nadiia-balitska/semester-prj2- Noroff School of Technology and Digital Media",
-      live: "https://semester-prj2- Noroff School of Technology and Digital Media.vercel.app",
-    
-      tech:["JS", "Taillwind", " Noroff School of Technology and Digital Media API"],
+      repo: "https://github.com/Nadiia-balitska/semester-prj2-noroff",
+      live: "https://semester-prj2-noroff.vercel.app",
+      tech: ["JS", "Taillwind", "Noroff API"],
     },
-        {
+
+    {
       key: "Team semester project",
       course: " Noroff School of Technology and Digital Media",
       title: "Semester Project Edugate school",
-      teaser: "Web-based result management system which allows students, teachers, and admins to view, update, and manage academic records efficiently",
+      teaser:
+        "Web-based result management system which allows students, teachers, and admins to view, update, and manage academic records efficiently",
       thumb: "./assets/eduGate.png",
-      repo: "https://github.com/ Noroff School of Technology and Digital MediaFEU/edu-gate-oct24ft",
-      // live: "need to be cloned first",    
-      tech:["HTML","CSS","JS"]
+      repo: "https://github.com/NoroffFEU/edu-gate-oct24ft",
+      // live: "need to be cloned first",
+      tech: ["HTML", "CSS", "JS"],
     },
     {
       key: "GameHub",
       course: " Noroff School of Technology and Digital Media",
       title: "GameHub - store for games",
-      teaser: "E‑commerce storefront with product cards, cart, and responsive UI.",
+      teaser:
+        "E‑commerce storefront with product cards, cart, and responsive UI.",
       thumb: "./assets/gamehub.jpg",
-      repo: "https://github.com/Nadiia-balitska/game-hub- Noroff School of Technology and Digital Media-assigment",
-      live: "https://nadiia-balitska.github.io/game-hub- Noroff School of Technology and Digital Media-assigment/",
-      tech:["HTML","CSS","JS", "Fetch"],
+      repo: "https://github.com/Nadiia-balitska/game-hub-noroff-assigment",
+      live: "https://nadiia-balitska.github.io/game-hub-noroff-assigment/",
+      tech: ["HTML", "CSS", "JS", "Fetch"],
     },
-       {
+    {
       key: "portfolio",
       course: "Bootcamp Team Project",
       title: "Team project 'Portfolio' ",
@@ -145,11 +195,11 @@ const CONFIG = {
       thumb: "./assets/portfolio.jpg",
       repo: "https://github.com/Nadiia-balitska/portfolio-web",
       live: "https://nestertsovv.github.io/dream-team-project-js/",
-    
-      tech:["HTML","CSS","JS"],
-    } ,
-   
-      {
+
+      tech: ["HTML", "CSS", "JS"],
+    },
+
+    {
       key: "cars for rent",
       course: "Bootcamp Project",
       title: "Renting the car ",
@@ -157,64 +207,75 @@ const CONFIG = {
       thumb: "./assets/car_rent.jpg",
       repo: "https://github.com/Nadiia-balitska/cars-for-rent",
       live: "https://cars-for-rent-five.vercel.app",
-    
-      tech:["HTML","CSS","JS", "React", "Redux"],
-    } ,
-    
-    
-  ]
+
+      tech: ["HTML", "CSS", "JS", "React", "Redux"],
+    },
+  ],
 };
 
 // ------------ Router ------------
-const view = document.getElementById('view');
-const navLinks = Array.from(document.querySelectorAll('[data-route]'));
-const setActive = (hash) => navLinks.forEach(a=> a.setAttribute('aria-current', a.getAttribute('href')===hash? 'page': 'false'));
+const view = document.getElementById("view");
+const navLinks = Array.from(document.querySelectorAll("[data-route]"));
+const setActive = (hash) =>
+  navLinks.forEach((a) =>
+    a.setAttribute(
+      "aria-current",
+      a.getAttribute("href") === hash ? "page" : "false",
+    ),
+  );
 
 const routes = {
-  '/home': () => tplHome(),
-  '/about': () => tplAbout(),
-  '/projects': () => tplProjects(),
-  '/docs': () => tplDocs(),
-  '/contact': () => tplContact(),
-  '/imprint': () => tplImprint(),
-  '/privacy': () => tplPrivacy()
+  "/home": () => tplHome(),
+  "/about": () => tplAbout(),
+  "/projects": () => tplProjects(),
+  "/docs": () => tplDocs(),
+  "/contact": () => tplContact(),
+  "/imprint": () => tplImprint(),
+  "/privacy": () => tplPrivacy(),
 };
 
-function router(){
-  const hash = location.hash.replace('#','') || '/home';
-  setActive('#'+hash);
-  const html = (routes[hash]||routes['/home'])();
+function router() {
+  const hash = location.hash.replace("#", "") || "/home";
+  setActive("#" + hash);
+  const html = (routes[hash] || routes["/home"])();
   view.innerHTML = html;
   focusMain();
   bindDynamic();
 }
 
-function focusMain(){
-  const h = view.querySelector('h1,h2,h3');
-  if(h){ h.setAttribute('tabindex','-1'); h.focus(); }
+function focusMain() {
+  const h = view.querySelector("h1,h2,h3");
+  if (h) {
+    h.setAttribute("tabindex", "-1");
+    h.focus();
+  }
 }
 
-window.addEventListener('hashchange', router);
-window.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('githubLink').href = CONFIG.owner.github;
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  const saved = localStorage.getItem('theme');
-  if(saved){ document.documentElement.setAttribute('data-theme', saved); }
-  document.getElementById('theme').addEventListener('click', () => {
-    const cur = document.documentElement.getAttribute('data-theme');
-    const next = cur === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    const pressed = next !== 'dark';
-    document.getElementById('theme').setAttribute('aria-pressed', String(pressed));
+window.addEventListener("hashchange", router);
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("githubLink").href = CONFIG.owner.github;
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  const saved = localStorage.getItem("theme");
+  if (saved) {
+    document.documentElement.setAttribute("data-theme", saved);
+  }
+  document.getElementById("theme").addEventListener("click", () => {
+    const cur = document.documentElement.getAttribute("data-theme");
+    const next = cur === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    const pressed = next !== "dark";
+    document
+      .getElementById("theme")
+      .setAttribute("aria-pressed", String(pressed));
   });
-  if(!location.hash) location.hash = '#/home';
+  if (!location.hash) location.hash = "#/home";
   router();
 });
 
 // ------------ Templates ------------
-function tplHome(){
-return `
+function tplHome() {
+  return `
 <section class="hero">
 <div class="card pad pad-1">
 <h1 class="title">Hi, I'm ${CONFIG.owner.name}</h1>
@@ -230,27 +291,34 @@ return `
 <div class="card pad">
 <h3>Quick Links</h3>
 <div class="list">
-${CONFIG.projects.map(p => `<a href="${p.repo}"><span>${p.title}</span><span class="badge">Updated</span></a>`).join('')}
+${CONFIG.projects.map((p) => `<a href="${p.repo}"><span>${p.title}</span><span class="badge">Updated</span></a>`).join("")}
 </div>
 </div>
 </div>
 </section>`;
 }
 
-function projCard(p){
-const tech = p.tech?.map(t=>`<span class="pill" aria-label="Tech">${t}</span>`).join(' ') || '';
-const backendBtn = p.back ? `<a class="btn" href="${p.back}" target="_blank" rel="noopener">Backend</a>` : '';
-const liveBtn = p.live ? `<a class="btn primary" href="${p.live}" target="_blank" rel="noopener">Live Demo</a>` : '';
+function projCard(p) {
+  const tech =
+    p.tech
+      ?.map((t) => `<span class="pill" aria-label="Tech">${t}</span>`)
+      .join(" ") || "";
+  const backendBtn = p.back
+    ? `<a class="btn" href="${p.back}" target="_blank" rel="noopener">Backend</a>`
+    : "";
+  const liveBtn = p.live
+    ? `<a class="btn primary" href="${p.live}" target="_blank" rel="noopener">Live Demo</a>`
+    : "";
 
-return `
+  return `
 <article class="card project" id="${p.key}" aria-labelledby="h-${p.key}">
 <img class="thumb" loading="lazy" src="${p.thumb}" alt="${p.title} thumbnail"/>
 <div class="meta">
 <div class="flex" style="justify-content:space-between; align-items:center">
 <h3 id="h-${p.key}" style="margin:0">${p.title}</h3>
-<span class="muted course_title">${p.course ?? ''}</span>
+<span class="muted course_title">${p.course ?? ""}</span>
 </div>
-<p class="muted" style="margin:.2rem 0 1rem">${p.teaser ?? ''}</p>
+<p class="muted" style="margin:.2rem 0 1rem">${p.teaser ?? ""}</p>
 <div class="flex" style="margin-bottom:10px">${tech}</div>
 <div class="flex">
 <a class="btn" href="${p.repo}" target="_blank" rel="noopener">GitHub Repo</a>
@@ -258,19 +326,19 @@ ${liveBtn}
 ${backendBtn}
 </div>
 </div>
-</article>`
+</article>`;
 }
 
-function tplProjects(){
-return `
+function tplProjects() {
+  return `
 <h2>Projects</h2>
 <p class="muted">Three course projects, each updated with at least one improvement.</p>
 <div class="grid cols-3">
-${CONFIG.projects.map(projCard).join('')}
+${CONFIG.projects.map(projCard).join("")}
 </div>`;
 }
 
-function tplDocs(){
+function tplDocs() {
   return `
     <h2>Documentation</h2>
     <div class="grid cols-2">
@@ -278,15 +346,15 @@ function tplDocs(){
         <h3>READMEs</h3>
         <ul>
           <li><a href="${CONFIG.owner.github}" target="_blank" rel="noopener">GitHub Profile README</a> (updated)</li>
-          ${CONFIG.projects.map(p=> `<li><a href="${p.repo}" target="_blank" rel="noopener">${p.title} README</a> (updated)</li>`).join('')}
+          ${CONFIG.projects.map((p) => `<li><a href="${p.repo}" target="_blank" rel="noopener">${p.title} README</a> (updated)</li>`).join("")}
         </ul>
         <p class="muted">Project READMEs follow the template: Overview → Features → Tech → Setup → Live → Screens → Improvements → License.</p>
       </div>
-    </div>`
+    </div>`;
 }
 
-function tplAbout(){
-return `
+function tplAbout() {
+  return `
 <h2>About Me</h2>
 <div class="grid cols-2">
 <div class="card pad">
@@ -350,10 +418,10 @@ return `
 </ul>
 </div>
 </div>
-</div>`
+</div>`;
 }
 
-function tplContact(){
+function tplContact() {
   return `
     <h2>Contact</h2>
     <div class="contact-grid">
@@ -395,53 +463,74 @@ function tplContact(){
     </div>`;
 }
 
+const dlg = document.getElementById("projDialog");
+function bindDynamic() {
+  document.querySelectorAll("[data-proj]")?.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const p = CONFIG.projects.find((x) => x.key === btn.dataset.proj);
+      if (!p) return;
+      document.getElementById("dlgTitle").textContent = p.title + " — Evidence";
+      const list = document.getElementById("dlgList");
+      const links = [
+        { label: "GitHub Repository", url: p.repo },
+        { label: "Live Demo", url: p.live },
+        ...p.improvements.map((i) => ({
+          label: `Improvement: ${i.label}`,
+          url: i.commit,
+        })),
+      ];
+      list.innerHTML = links
+        .map(
+          (l) =>
+            `<a href="${l.url}" target="_blank" rel="noopener"><span>${l.label}</span><span>↗</span></a>`,
+        )
+        .join("");
+      dlg.showModal();
+    }),
+  );
 
+  const form = document.getElementById("contactForm");
+  if (form) {
+    const btn = document.getElementById("sendBtn");
+    const note = document.getElementById("formNote");
+    const ta = form.querySelector("textarea");
 
+    const autosize = () => {
+      ta.style.height = "auto";
+      ta.style.height = ta.scrollHeight + "px";
+    };
+    ta?.addEventListener("input", autosize);
+    autosize();
 
-const dlg = document.getElementById('projDialog');
-function bindDynamic(){
-  document.querySelectorAll('[data-proj]')?.forEach(btn => btn.addEventListener('click', () => {
-    const p = CONFIG.projects.find(x=> x.key === btn.dataset.proj);
-    if(!p) return;
-    document.getElementById('dlgTitle').textContent = p.title + ' — Evidence';
-    const list = document.getElementById('dlgList');
-    const links = [
-      {label:'GitHub Repository', url:p.repo},
-      {label:'Live Demo', url:p.live},
-      ...p.improvements.map(i=> ({label:`Improvement: ${i.label}`, url:i.commit}))
-    ];
-    list.innerHTML = links.map(l => `<a href="${l.url}" target="_blank" rel="noopener"><span>${l.label}</span><span>↗</span></a>`).join('');
-    dlg.showModal();
-  }));
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) {
+        note.textContent = "Please fix validation errors.";
+        return;
+      }
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      const data = Object.fromEntries(new FormData(form).entries());
+      const body = encodeURIComponent(
+        data.message + "\n\n— " + data.name + "\n" + data.email,
+      );
+      location.href = `mailto:${CONFIG.owner.email}?subject=Portfolio%20Contact%20from%20${encodeURIComponent(data.name)}&body=${body}`;
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = "Send";
+        note.textContent =
+          "Thanks! Your message is ready in your email client.";
+      }, 600);
+    });
+  }
 
-const form = document.getElementById('contactForm');
-if(form){
-  const btn = document.getElementById('sendBtn');
-  const note = document.getElementById('formNote');
-  const ta = form.querySelector('textarea');
-
-  const autosize = () => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
-  ta?.addEventListener('input', autosize); autosize();
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if(!form.reportValidity()){
-      note.textContent = 'Please fix validation errors.';
-      return;
-    }
-    btn.disabled = true; btn.textContent = 'Sending…';
-    const data = Object.fromEntries(new FormData(form).entries());
-    const body = encodeURIComponent(data.message + '\n\n— ' + data.name + '\n' + data.email);
-    location.href = `mailto:${CONFIG.owner.email}?subject=Portfolio%20Contact%20from%20${encodeURIComponent(data.name)}&body=${body}`;
-    setTimeout(()=>{ btn.disabled=false; btn.textContent='Send'; note.textContent='Thanks! Your message is ready in your email client.'; }, 600);
-  });
-}
-
-
-
-  if(location.hash.includes('#') && location.hash.split('#')[2]){
-    const id = location.hash.split('#')[2];
+  if (location.hash.includes("#") && location.hash.split("#")[2]) {
+    const id = location.hash.split("#")[2];
     const el = document.getElementById(id);
-    if(el){ el.scrollIntoView({behavior:'smooth', block:'center'}); el.classList.add('highlight'); setTimeout(()=> el.classList.remove('highlight'), 1800) }
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.classList.add("highlight");
+      setTimeout(() => el.classList.remove("highlight"), 1800);
+    }
   }
 }
