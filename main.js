@@ -11,9 +11,10 @@ const CONFIG = {
     telegram: "https://t.me/nadiia_balitska",
   },
   projects: [
+
        {
-      key: "ActiveUnity — Full-Stack Event Management Platform",
-      course: "National Transport University",
+      key: "NTU_bachelor, JavaScript_framework_noroff ",
+      course: "National Transport University,  Noroff School of Technology and Digital Media School of Technology and Digital Media",
       title: "ActiveUnity — Full-Stack Event Management Platform",
       teaser: "A platform for managing events with real-time collaboration features.",
       thumb: "./assets/active_unity.png",
@@ -47,18 +48,18 @@ const CONFIG = {
     
       tech:["HTML","CSS","JS", "React", "Type Script", "Redux", "Node.js", "Express.js"]
     },
-       {
-      key: "Inteship project",
-      course: "Adtelliget org. Bidmatic",
-      title: "Intership project",
-      teaser: "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
-      thumb: "./assets/bidmatic_intership.jpg",
-      repo: "https://github.com/Nadiia-balitska/adtelligent_front",
-      // live: "https://adtelligent-front.vercel.app",
-      back: "https://github.com/Nadiia-balitska/adtelligent_back",
+           {
+      key: "project_exam2",
+      course: "Noroff School of Technology and Digital Media",
+      title: "Holidaze is a venue booking application",
+      teaser: "The application allows customers to discover and book venues, while venue managers can create, edit and manage their own listings and view upcoming bookings.",
+      thumb: "./assets/holidaze.png",
+      repo: "https://github.com/Nadiia-balitska/holidaze_noroff",
+      live: "https://holidaze-noroff.vercel.app",
     
-      tech:["HTML","CSS","JS", "React", "Type Script", "Tailwind", "Zustand", "Node.js", "Fastify.js", "Prebid.js"]
+      tech:["JS/TS", "React.js", "Cloudinary", "Taillwind"]
     },
+  
        {
       key: "money-guard",
       course: "Bootcamp Project",
@@ -70,57 +71,70 @@ const CONFIG = {
     
       tech:["HTML","CSS","JS", "React", "Redux"],
     },
+         {
+      key: "Inteship project",
+      course: "Adtelliget org. Bidmatic",
+      title: "Intership project",
+      teaser: "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
+      thumb: "./assets/bidmatic_intership.jpg",
+      repo: "https://github.com/Nadiia-balitska/adtelligent_front",
+      // live: "https://adtelligent-front.vercel.app",
+      back: "https://github.com/Nadiia-balitska/adtelligent_back",
+    
+      tech:["HTML","CSS","JS", "React", "Type Script", "Tailwind", "Zustand", "Node.js", "Fastify.js", "Prebid.js"]
+    },
+        {
+      key: "javascript2, css_frameworks",
+      course: " Noroff School of Technology and Digital Media",
+      title: "Social Media",
+      teaser: "You can brows different posts and make your own like in social media",
+      thumb: "./assets/socialNews.png",
+      repo: "https://github.com/Nadiia-balitska/JS2- Noroff School of Technology and Digital Media-assigm",
+      live: "https://js-2- Noroff School of Technology and Digital Media-assigm-z2yo.vercel.app/post/index.html",
+    
+      tech:["JS", "Taillwind", " Noroff School of Technology and Digital Media API"],
+    },
     {
-      key: "exam-project",
-      course: "Noroff",
+      key: "exam-project1",
+      course: " Noroff School of Technology and Digital Media",
       title: "Premium Tech Store",
       teaser: "Tech Store where you can buy different technology",
       thumb: "./assets/exam_project.jpg",
-      repo: "https://github.com/Nadiia-balitska/noroff_exam_project_1",
+      repo: "https://github.com/Nadiia-balitska/ Noroff School of Technology and Digital Media_exam_project_1",
       // live: "need to be cloned",
     
       tech:["HTML","CSS","JS","Fetch", "Swagger API"],
     },
-    {
-      key: "javascript2",
-      course: "Noroff",
-      title: "Social Media",
-      teaser: "You can brows different posts and make your own",
-      thumb: "./assets/socialNews.png",
-      repo: "https://github.com/Nadiia-balitska/JS2-noroff-assigm",
-      live: "https://js-2-noroff-assigm-z2yo.vercel.app/post/index.html",
-    
-      tech:["JS", "Taillwind", "Noroff API"],
-    },
+
        {
       key: "semesterProject2",
-      course: "Noroff",
+      course: " Noroff School of Technology and Digital Media",
       title: "AuctionLite",
       teaser: "Online Auction Platform",
       thumb: "./assets/auctionLite.png",
-      repo: "https://github.com/Nadiia-balitska/semester-prj2-noroff",
-      live: "https://semester-prj2-noroff.vercel.app",
+      repo: "https://github.com/Nadiia-balitska/semester-prj2- Noroff School of Technology and Digital Media",
+      live: "https://semester-prj2- Noroff School of Technology and Digital Media.vercel.app",
     
-      tech:["JS", "Taillwind", "Noroff API"],
+      tech:["JS", "Taillwind", " Noroff School of Technology and Digital Media API"],
     },
         {
       key: "Team semester project",
-      course: "Noroff",
+      course: " Noroff School of Technology and Digital Media",
       title: "Semester Project Edugate school",
       teaser: "Web-based result management system which allows students, teachers, and admins to view, update, and manage academic records efficiently",
       thumb: "./assets/eduGate.png",
-      repo: "https://github.com/NoroffFEU/edu-gate-oct24ft",
+      repo: "https://github.com/ Noroff School of Technology and Digital MediaFEU/edu-gate-oct24ft",
       // live: "need to be cloned first",    
       tech:["HTML","CSS","JS"]
     },
     {
       key: "GameHub",
-      course: "Noroff",
+      course: " Noroff School of Technology and Digital Media",
       title: "GameHub - store for games",
       teaser: "E‑commerce storefront with product cards, cart, and responsive UI.",
       thumb: "./assets/gamehub.jpg",
-      repo: "https://github.com/Nadiia-balitska/game-hub-noroff-assigment",
-      live: "https://nadiia-balitska.github.io/game-hub-noroff-assigment/",
+      repo: "https://github.com/Nadiia-balitska/game-hub- Noroff School of Technology and Digital Media-assigment",
+      live: "https://nadiia-balitska.github.io/game-hub- Noroff School of Technology and Digital Media-assigment/",
       tech:["HTML","CSS","JS", "Fetch"],
     },
        {
@@ -277,7 +291,7 @@ return `
 <div class="grid cols-2">
 <div class="card pad">
 <p>I'm <strong>${CONFIG.owner.name}</strong>, a passionate <strong>Full‑stack Developer</strong> based in Oslo, Norway. I enjoy creating clean, accessible, and user‑focused web applications that combine thoughtful design with solid technical architecture.</p>
-<p>My educational journey started at <strong>National Transport University (Ukraine)</strong>. I continued at <strong>Noroff School of Technology and Digital Media</strong> and I'm currently pursuing <strong>Information Technology at OsloMet University</strong>.</p>
+<p>My educational journey started at <strong>National Transport University (Ukraine)</strong>. I continued at <strong> Noroff School of Technology and Digital Media School of Technology and Digital Media</strong> and I'm currently pursuing <strong>Information Technology at OsloMet University</strong>.</p>
 <p>To strengthen my practical skills, I completed a <strong>6‑month Full‑stack Development Bootcamp</strong>, <strong>SoftServe’s Front‑end Project‑Based Learning</strong>, and <strong>Hillel IT School’s Deep Node.js</strong>. These programs gave me hands‑on experience with modern tools and teamwork in agile environments.</p>
 </div>
 <div class="card pad">
