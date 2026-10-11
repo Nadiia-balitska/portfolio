@@ -1,53 +1,131 @@
+
 <!doctype html>
-<html lang="uk">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Портфоліо Надії Баліцької — Frontend/Full‑stack Developer. Проєкти: Rainydays (Cross Course), JavaScript 1, Semester Project 1." />
-  <title>Nadiia Balitska — Portfolio</title>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="theme-color"
+    content="#090e18"
+  >
+
+  <meta
+    name="description"
+    content="Nadiia Balitska — frontend and full-stack developer in Oslo. Selected projects in React, TypeScript, Next.js and Node.js."
+  >
+
+  <title>Nadiia Balitska — Full-Stack Developer</title>
+
   <link rel="stylesheet" href="./styles.css">
+
+  <script defer src="./project-data.js"></script>
+  <script defer src="./main.js"></script>
 </head>
+
 <body>
-  <a href="#main" class="sr-only">Перейти до контенту</a>
-  <header class="">
+
+
+
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+
+
+  <header class="site-header">
     <div class="container nav">
-      <div class="left">
-        <div class="brand">Nadiia Balitska  <span class="chip" aria-hidden>My Portfolio</span></div>
-        <nav class="router" aria-label="Primary">
-          <a href="#/home" data-route>Home</a>
-          <a href="#/about" data-route>About</a>
-          <a href="#/projects" data-route>Projects</a>
-          <!-- <a href="#/docs" data-route>Docs</a> -->
-          <a href="#/contact" data-route>Contact</a>
-        </nav>
-      </div>
-      <div class="right flex">
-        <button id="theme" class="btn small" aria-pressed="false" title="Toggle theme">🌙 Theme</button>
-        <a id="githubLink" class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+
+      <a
+        class="logo"
+        href="#/home"
+        aria-label="Nadiia Balitska — Home"
+      >
+        <span class="logo-mark">N</span>
+
+        <span>
+          nadiia<span class="logo-muted">/dev</span>
+        </span>
+      </a>
+
+      <nav
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
+        <a href="#/home" data-route>
+          Home
+        </a>
+
+        <a href="#/projects" data-route>
+          Projects
+        </a>
+
+        <a href="#/about" data-route>
+          About
+        </a>
+
+        <a href="#/contact" data-route>
+          Contact
+        </a>
+      </nav>
+
+   
+      <div class="nav-actions">
+
+        <button
+          class="theme-toggle"
+          id="theme"
+          type="button"
+          aria-label="Switch theme"
+          title="Switch theme"
+        >
+          ☼
+        </button>
+
+       
+        <a
+          class="btn btn-outline nav-github"
+          id="githubLink"
+          href="https://github.com/Nadiia-balitska"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+
       </div>
     </div>
   </header>
 
-  <main id="main" class="container">
-    <section id="view" aria-live="polite"></section>
+
+
+  <main
+    id="main"
+    class="container"
+    tabindex="-1"
+  >
+    <div id="view"></div>
   </main>
 
-  <footer class="container">
-    <div class="row">
-      <small>© <span id="yr"></span> Nadiia Balitska. All rights reserved.</small>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <span>
+        © <span id="yr"></span> Nadiia Balitska
+      </span>
+
+      <a href="#/contact">
+        Let's connect ↗
+      </a>
+
     </div>
   </footer>
 
-  <dialog id="projDialog" aria-label="Project Links">
-    <div class="dialog-head">
-      <strong id="dlgTitle">Project</strong>
-      <button class="btn small ghost" onclick="dlg.close()" aria-label="Close">✕</button>
-    </div>
-    <div class="dialog-body">
-      <div class="list" id="dlgList"></div>
-    </div>
-  </dialog>
-
-  <script src="./main.js"></script>
 </body>
 </html>

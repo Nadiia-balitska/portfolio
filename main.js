@@ -1,536 +1,733 @@
-const CONFIG = {
-  owner: {
-    name: "Nadiia Balitska",
-    title: "Junior Full‑stack Developer",
-    location: "Oslo, Norway",
-    email: "balitskanadia2@gmail.com",
-    github: "https://github.com/Nadiia-balitska",
-    linkedin: "https://www.linkedin.com/in/nadiia-balitska/",
-    cvURL: "./docs/Nadia_cv.pdf",
-    coverURL: "./docs/cover_letter.pdf",
-    telegram: "https://t.me/nadiia_balitska",
-  },
-  projects: [
-    {
-      key: "NTU_bachelor, JavaScript_framework_noroff ",
-      course:
-        "National Transport University,  Noroff School of Technology and Digital Media School of Technology and Digital Media",
-      title: "ActiveUnity — Full-Stack Event Management Platform",
-      teaser:
-        "A platform for managing events with real-time collaboration features.",
-      thumb: "./assets/active_unity.png",
-      repo: "https://github.com/Nadiia-balitska/activeunity-frontend",
-      live: "https://activeunity-frontend.vercel.app/",
-      back: "https://github.com/Nadiia-balitska/activeunity-backend",
 
-      tech: [
-        "JS/TS",
-        "Next.js",
-        "Zustand",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Cloudinary",
-        "Taillwind",
-      ],
-    },
-    {
-      key: "Soft Serve project",
-      course: "Soft Serve ",
-      title: "Soft Serve project Space-to-Study ",
-      teaser:
-        "Studying enviroment where both students and teachers can find themselv",
-      thumb: "./assets/spase_to_study.jpg",
-      repo: "https://github.com/Nadiia-balitska/Project-SS",
-      live: "https://project-ss-sooty.vercel.app",
-      back: "https://github.com/Nadiia-balitska/BackEnd-SS-project",
+'use strict';
 
-      tech: [
-        "HTML",
-        "CSS",
-        "JS",
-        "React",
-        "Redux",
-        "Type Script",
-        "Node.js",
-        "Express.js",
-      ],
-    },
-    {
-      key: "Team project water track",
-      course: "Bootcamp Team Project",
-      title: "Team project water track",
-      teaser: "Web-app where you can track your water consumption",
-      thumb: "./assets/water_track.jpg",
-      repo: "https://github.com/LigerCode3443/AquaTrack",
-      live: "https://aqua-track.netlify.app",
-      back: "https://github.com/defaultnastia/water-tracker-be",
+// ==========================================
+// CONFIGURATION
+// ==========================================
 
-      tech: [
-        "HTML",
-        "CSS",
-        "JS",
-        "React",
-        "Type Script",
-        "Redux",
-        "Node.js",
-        "Express.js",
-      ],
-    },
-    {
-      key: "project_exam2",
-      course: "Noroff School of Technology and Digital Media",
-      title: "Holidaze is a venue booking application",
-      teaser:
-        "The application allows customers to discover and book venues, while venue managers can create, edit and manage their own listings and view upcoming bookings.",
-      thumb: "./assets/holidaze.png",
-      repo: "https://github.com/Nadiia-balitska/holidaze_noroff",
-      live: "https://holidaze-noroff.vercel.app",
-
-      tech: ["JS/TS", "React.js", "Cloudinary", "Taillwind"],
-    },
-
-    {
-      key: "money-guard",
-      course: "Bootcamp Project",
-      title: "Bootcamp project money guard",
-      teaser:
-        "Web application for tracking personal finances with user authentication, transaction management, and data visualization.",
-      thumb: "./assets/moneu_guard.jpg",
-      repo: "https://github.com/Nadiia-balitska/money-guard",
-      live: "https://money-guard-ten.vercel.app",
-
-      tech: ["HTML", "CSS", "JS", "React", "Redux"],
-    },
-    {
-      key: "Inteship project",
-      course: "Adtelliget org. Bidmatic",
-      title: "Intership project",
-      teaser:
-        "Intership study project with more press into how to create advertisments inside web-app using Prebid.js",
-      thumb: "./assets/bidmatic_intership.jpg",
-      repo: "https://github.com/Nadiia-balitska/adtelligent_front",
-      // live: "https://adtelligent-front.vercel.app",
-      back: "https://github.com/Nadiia-balitska/adtelligent_back",
-
-      tech: [
-        "HTML",
-        "CSS",
-        "JS",
-        "React",
-        "Type Script",
-        "Tailwind",
-        "Zustand",
-        "Node.js",
-        "Fastify.js",
-        "Prebid.js",
-      ],
-    },
-    {
-      key: "javascript2, css_frameworks",
-      course: " Noroff School of Technology and Digital Media",
-      title: "Social Media",
-      teaser:
-        "You can brows different posts and make your own like in social media",
-      thumb: "./assets/socialNews.png",
-      repo: "https://github.com/Nadiia-balitska/JS2-noroff-assigm",
-      live: "https://js-2-noroff-assigm-z2yo.vercel.app/post/index.html",
-
-      tech: [
-        "JS",
-        "Taillwind",
-        " Noroff School of Technology and Digital Media API",
-      ],
-    },
-    {
-      key: "exam-project1",
-      course: " Noroff School of Technology and Digital Media",
-      title: "Premium Tech Store",
-      teaser: "Tech Store where you can buy different technology",
-      thumb: "./assets/exam_project.jpg",
-      repo: "https://github.com/Nadiia-balitska/noroff_exam_project_1",
-      // live: "need to be cloned",
-
-      tech: ["HTML", "CSS", "JS", "Fetch", "Swagger API"],
-    },
-
-    {
-      key: "semesterProject2",
-      course: " Noroff School of Technology and Digital Media",
-      title: "AuctionLite",
-      teaser: "Online Auction Platform",
-      thumb: "./assets/auctionLite.png",
-      repo: "https://github.com/Nadiia-balitska/semester-prj2-noroff",
-      live: "https://semester-prj2-noroff.vercel.app",
-      tech: ["JS", "Taillwind", "Noroff API"],
-    },
-
-    {
-      key: "Team semester project",
-      course: " Noroff School of Technology and Digital Media",
-      title: "Semester Project Edugate school",
-      teaser:
-        "Web-based result management system which allows students, teachers, and admins to view, update, and manage academic records efficiently",
-      thumb: "./assets/eduGate.png",
-      repo: "https://github.com/NoroffFEU/edu-gate-oct24ft",
-      // live: "need to be cloned first",
-      tech: ["HTML", "CSS", "JS"],
-    },
-    {
-      key: "GameHub",
-      course: " Noroff School of Technology and Digital Media",
-      title: "GameHub - store for games",
-      teaser:
-        "E‑commerce storefront with product cards, cart, and responsive UI.",
-      thumb: "./assets/gamehub.jpg",
-      repo: "https://github.com/Nadiia-balitska/game-hub-noroff-assigment",
-      live: "https://nadiia-balitska.github.io/game-hub-noroff-assigment/",
-      tech: ["HTML", "CSS", "JS", "Fetch"],
-    },
-    {
-      key: "portfolio",
-      course: "Bootcamp Team Project",
-      title: "Team project 'Portfolio' ",
-      teaser: "Web application 'Portfolio' ",
-      thumb: "./assets/portfolio.jpg",
-      repo: "https://github.com/Nadiia-balitska/portfolio-web",
-      live: "https://nestertsovv.github.io/dream-team-project-js/",
-
-      tech: ["HTML", "CSS", "JS"],
-    },
-
-    {
-      key: "cars for rent",
-      course: "Bootcamp Project",
-      title: "Renting the car ",
-      teaser: "Web application for renting the car",
-      thumb: "./assets/car_rent.jpg",
-      repo: "https://github.com/Nadiia-balitska/cars-for-rent",
-      live: "https://cars-for-rent-five.vercel.app",
-
-      tech: ["HTML", "CSS", "JS", "React", "Redux"],
-    },
-  ],
+const owner = {
+  name: 'Nadiia Balitska',
+  title: 'Frontend & Full-Stack Developer',
+  location: 'Oslo, Norway',
+  email: 'balitskanadia2@gmail.com',
+  github: 'https://github.com/Nadiia-balitska',
+  linkedin: 'https://www.linkedin.com/in/nadiia-balitska/',
+  telegram: 'https://t.me/nadiia_balitska',
+  cv: './docs/Nadia_cv.pdf'
 };
 
-// ------------ Router ------------
-const view = document.getElementById("view");
-const navLinks = Array.from(document.querySelectorAll("[data-route]"));
-const setActive = (hash) =>
-  navLinks.forEach((a) =>
-    a.setAttribute(
-      "aria-current",
-      a.getAttribute("href") === hash ? "page" : "false",
-    ),
-  );
+const projects = window.PORTFOLIO_PROJECTS || [];
+const featured = projects.slice(0, 3);
+const view = document.getElementById('view');
 
-const routes = {
-  "/home": () => tplHome(),
-  "/about": () => tplAbout(),
-  "/projects": () => tplProjects(),
-  "/docs": () => tplDocs(),
-  "/contact": () => tplContact(),
-  "/imprint": () => tplImprint(),
-  "/privacy": () => tplPrivacy(),
+// ==========================================
+// HELPERS
+// ==========================================
+
+const escapeHTML = (value = '') =>
+  String(value).replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[char]);
+
+const validUrl = (value) => {
+  try {
+    const url = new URL(value);
+
+    return (
+      ['http:', 'https:'].includes(url.protocol) &&
+      !value.includes(' ')
+    );
+  } catch {
+    return false;
+  }
 };
 
-function router() {
-  const hash = location.hash.replace("#", "") || "/home";
-  setActive("#" + hash);
-  const html = (routes[hash] || routes["/home"])();
-  view.innerHTML = html;
-  focusMain();
-  bindDynamic();
-}
-
-function focusMain() {
-  const h = view.querySelector("h1,h2,h3");
-  if (h) {
-    h.setAttribute("tabindex", "-1");
-    h.focus();
-  }
-}
-
-window.addEventListener("hashchange", router);
-window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("githubLink").href = CONFIG.owner.github;
-  document.getElementById("yr").textContent = new Date().getFullYear();
-  const saved = localStorage.getItem("theme");
-  if (saved) {
-    document.documentElement.setAttribute("data-theme", saved);
-  }
-  document.getElementById("theme").addEventListener("click", () => {
-    const cur = document.documentElement.getAttribute("data-theme");
-    const next = cur === "light" ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", next);
-    localStorage.setItem("theme", next);
-    const pressed = next !== "dark";
-    document
-      .getElementById("theme")
-      .setAttribute("aria-pressed", String(pressed));
-  });
-  if (!location.hash) location.hash = "#/home";
-  router();
-});
-
-// ------------ Templates ------------
-function tplHome() {
+const tags = (items) => {
   return `
-<section class="hero">
-<div class="card pad pad-1">
-<h1 class="title">Hi, I'm ${CONFIG.owner.name}</h1>
-<p class="muted">${CONFIG.owner.title} · ${CONFIG.owner.location}</p>
-<p>Welcome to my portfolio. Here I would like to introduce myself and share a selection of my work. I build end‑to‑end web applications with a focus on clean architecture, accessibility, and measurable performance. Please feel free to explore and reach out if something resonates.</p>
-<div class="flex" style="margin-top:10px">
-<a class="btn primary" href="#/projects">View Projects</a>
-<a class="btn" href="${CONFIG.owner.cvURL}" target="_blank" rel="noopener">CV / Resume</a>
-<a class="btn" href="${CONFIG.owner.coverURL}" target="_blank" rel="noopener">Cover Letter</a>
-</div>
-</div>
-<div class="grid">
-<div class="card pad">
-<h3>Quick Links</h3>
-<div class="list">
-${CONFIG.projects.map((p) => `<a href="${p.repo}"><span>${p.title}</span><span class="badge">Updated</span></a>`).join("")}
-</div>
-</div>
-</div>
-</section>`;
-}
+    <div class="tags">
+      ${(items || [])
+        .slice(0, 5)
+        .map((item) => `
+          <span class="tag">${escapeHTML(item)}</span>
+        `)
+        .join('')}
+    </div>
+  `;
+};
 
-function projCard(p) {
-  const tech =
-    p.tech
-      ?.map((t) => `<span class="pill" aria-label="Tech">${t}</span>`)
-      .join(" ") || "";
-  const backendBtn = p.back
-    ? `<a class="btn" href="${p.back}" target="_blank" rel="noopener">Backend</a>`
-    : "";
-  const liveBtn = p.live
-    ? `<a class="btn primary" href="${p.live}" target="_blank" rel="noopener">Live Demo</a>`
-    : "";
-
+const photo = (project, className = 'project-image') => {
   return `
-<article class="card project" id="${p.key}" aria-labelledby="h-${p.key}">
-<img class="thumb" loading="lazy" src="${p.thumb}" alt="${p.title} thumbnail"/>
-<div class="meta">
-<div class="flex" style="justify-content:space-between; align-items:center">
-<h3 id="h-${p.key}" style="margin:0">${p.title}</h3>
-<span class="muted course_title">${p.course ?? ""}</span>
-</div>
-<p class="muted" style="margin:.2rem 0 1rem">${p.teaser ?? ""}</p>
-<div class="flex" style="margin-bottom:10px">${tech}</div>
-<div class="flex">
-<a class="btn" href="${p.repo}" target="_blank" rel="noopener">GitHub Repo</a>
-${liveBtn}
-${backendBtn}
-</div>
-</div>
-</article>`;
-}
+    <img
+      class="${className}"
+      src="${escapeHTML(project.thumb)}"
+      alt="Screenshot of ${escapeHTML(project.title)}"
+      loading="lazy"
+      onerror="this.style.visibility='hidden'"
+    />
+  `;
+};
 
-function tplProjects() {
-  return `
-<h2>Projects</h2>
-<p class="muted">Three course projects, each updated with at least one improvement.</p>
-<div class="grid cols-3">
-${CONFIG.projects.map(projCard).join("")}
-</div>`;
-}
+// ==========================================
+// PROJECT CARDS
+// ==========================================
 
-function tplDocs() {
+const projectCard = (project) => {
   return `
-    <h2>Documentation</h2>
-    <div class="grid cols-2">
-      <div class="card pad">
-        <h3>READMEs</h3>
-        <ul>
-          <li><a href="${CONFIG.owner.github}" target="_blank" rel="noopener">GitHub Profile README</a> (updated)</li>
-          ${CONFIG.projects.map((p) => `<li><a href="${p.repo}" target="_blank" rel="noopener">${p.title} README</a> (updated)</li>`).join("")}
-        </ul>
-        <p class="muted">Project READMEs follow the template: Overview → Features → Tech → Setup → Live → Screens → Improvements → License.</p>
+    <article class="project-card">
+      <a
+        href="#/project/${encodeURIComponent(project.slug)}"
+        aria-label="Read more about ${escapeHTML(project.title)}"
+      >
+        ${photo(project)}
+      </a>
+
+      <div class="project-content">
+        <span class="project-meta">
+          ${escapeHTML(project.course)}
+        </span>
+
+        <h3>${escapeHTML(project.title)}</h3>
+
+        <p>${escapeHTML(project.teaser)}</p>
+
+        ${tags(project.tech)}
+
+        <a
+          class="project-bottom"
+          href="#/project/${encodeURIComponent(project.slug)}"
+        >
+          Read case study
+          <span aria-hidden="true">↗</span>
+        </a>
       </div>
-    </div>`;
+    </article>
+  `;
+};
+
+// ==========================================
+// TECHNICAL STACK
+// ==========================================
+
+const stack = [
+  [
+    'Frontend',
+    [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'JavaScript',
+      'HTML & CSS',
+      'Tailwind CSS',
+      'Bootstrap',
+      'Redux Toolkit',
+      'Zustand'
+    ]
+  ],
+  [
+    'Backend',
+    [
+      'Node.js',
+      'Express',
+      'Fastify',
+      'REST APIs',
+      'Authentication',
+      'Prisma ORM'
+    ]
+  ],
+  [
+    'Data & tools',
+    [
+      'MongoDB',
+      'PostgreSQL',
+      'MySQL',
+      'ClickHouse',
+      'Cloudinary',
+      'Git & GitHub',
+      'Docker',
+      'CI/CD'
+    ]
+  ],
+  [
+    'Also working with',
+    [
+      'Python',
+      'Java',
+      'Playwright',
+      'Vitest',
+      'Prebid.js',
+      'Figma',
+      'LLM tools'
+    ]
+  ]
+];
+
+const stacks = () => {
+  return `
+    <div class="stack-grid">
+      ${stack
+        .map(([name, items]) => `
+          <section class="panel">
+            <h3>${name}</h3>
+
+            <div class="stack-list">
+              ${items
+                .map((item) => `<span>${item}</span>`)
+                .join('')}
+            </div>
+          </section>
+        `)
+        .join('')}
+    </div>
+  `;
+};
+
+// ==========================================
+// HOME PAGE
+// ==========================================
+
+function home() {
+  return `
+    <section class="hero">
+      <div>
+        <span class="eyebrow">
+          Full-stack developer · Oslo, Norway
+        </span>
+
+        <h1>
+          Building thoughtful
+          <span class="gradient-text">
+            digital experiences.
+          </span>
+        </h1>
+
+        <p class="lead">
+          Hi, I'm Nadiia. I build accessible, responsive web
+          applications — from polished React interfaces to APIs
+          and full-stack products with TypeScript and Node.js.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#/projects">
+            Explore my projects ↗
+          </a>
+
+          <a class="btn btn-outline" href="#/contact">
+            Get in touch
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="./docs/Nadia_cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            My CV ↗
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="./docs/cover_letter.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cover Letter ↗
+          </a>
+        </div>
+
+        <p class="availability" style="margin-top: 24px">
+          <span class="dot"></span>
+          Open to frontend and full-stack opportunities
+        </p>
+      </div>
+
+    
+<div class="hero-panel" aria-label="Technology summary">
+  <div class="panel-top">
+    nadiia / developer-profile.js
+  </div>
+
+  <pre class="hero-code"><code><span class="code-violet">const</span> developer = {
+  name: <span class="code-accent">'Nadiia'</span>,
+  focus: [
+    <span class="code-accent">'JavaScript'</span>, <span class="code-accent">'TypeScript'</span>,
+    <span class="code-accent">'React'</span>, <span class="code-accent">'Next.js'</span>,
+    <span class="code-accent">'Node.js'</span>, <span class="code-accent">'Java'</span>
+  ],
+  approach: <span class="code-accent">'build & improve'</span>,
+  location: <span class="code-accent">'Oslo'</span>
+};</code></pre>
+</div>
+
+    </section>
+  `;
 }
 
-function tplAbout() {
+// ==========================================
+// PROJECTS PAGE
+// ==========================================
+
+function listing() {
   return `
-<h2>About Me</h2>
-<div class="grid cols-2">
-<div class="card pad">
-<p>I'm <strong>${CONFIG.owner.name}</strong>, a passionate <strong>Full‑stack Developer</strong> based in Oslo, Norway. I enjoy creating clean, accessible, and user‑focused web applications that combine thoughtful design with solid technical architecture.</p>
-<p>My educational journey started at <strong>National Transport University (Ukraine)</strong>. I continued at <strong> Noroff School of Technology and Digital Media School of Technology and Digital Media</strong> and I'm currently pursuing <strong>Information Technology at OsloMet University</strong>.</p>
-<p>To strengthen my practical skills, I completed a <strong>6‑month Full‑stack Development Bootcamp</strong>, <strong>SoftServe’s Front‑end Project‑Based Learning</strong>, and <strong>Hillel IT School’s Deep Node.js</strong>. These programs gave me hands‑on experience with modern tools and teamwork in agile environments.</p>
-</div>
-<div class="card pad">
-<h3>Experience</h3>
-<p>I have <strong>3 months of freelance experience</strong> building small landing pages end‑to‑end, and a <strong>1‑month internship at Adtelligent (Bidmatic)</strong> where I worked in a full‑stack environment:</p>
-<ul>
-<li><strong>Backend:</strong> Fastify.js, Prisma, Node.js</li>
-<li><strong>Frontend:</strong> React, TypeScript, Tailwind CSS, Zustand</li>
-<li><strong>Databases:</strong> MongoDB, ClickHouse</li>
-</ul>
-<p>I’m eager to learn new technologies, improve existing solutions, and contribute to scalable, high‑quality products that bring real value to users.</p>
-</div>
-</div>
+    <section class="page-top">
+      <span class="eyebrow">Portfolio</span>
 
-<div class="card pad" style="margin-top:18px">
-<h3>Technologies</h3>
-<div class="grid cols-3">
-<div>
-<h4>Frontend</h4>
-<ul>
-<li>HTML5, CSS3 (Responsive, BEM)</li>
-<li>JavaScript (ES6+), TypeScript</li>
-<li>React</li>
-<li> Redux, Zustand</li>
-<li>Tailwind CSS</li>
-<li>Prebid.js</li>
+      <h1 class="page-heading">
+        Projects
+      </h1>
 
-</ul>
-</div>
-<div>
-<h4>Backend</h4>
-<ul>
-<li>Node.js</li>
-<li>Express.js, Fastify.js</li>
-<li>REST APIs, Authentication</li>
-<li>Prisma ORM</li>
-</ul>
-</div>
-<div>
-<h4>Databases</h4>
-<ul>
-<li>MongoDB</li>
-<li>ClickHouse</li>
-</ul>
-</div>
-<div>
-<h4>Other</h4>
-<ul>
-<li>Python (data analysis) </li>
-<li>Java</li>
-<li>Docker</li>
-<li>Git,CI/CD</li>
-<li>Figma, wireframe and prototyping</li>
-<li>Vite</li>
-<li>Railway, Render, Vercel</li>
-</ul>
-</div>
-</div>
-</div>`;
+      <p class="muted">
+        A collection of web applications, team projects
+        and full-stack work. Select a project to learn more.
+      </p>
+    </section>
+
+    <div class="project-grid">
+      ${projects.map(projectCard).join('')}
+    </div>
+  `;
 }
 
-function tplContact() {
+// ==========================================
+// ABOUT PAGE
+// ==========================================
+
+function about() {
   return `
-    <h2>Contact</h2>
-    <div class="contact-grid">
-      <div class="card pad">
-        <h3>Direct contacts</h3>
-        <div class="contact-row">
-          <div class="contact-card">
-            <div class="icon" aria-hidden>📧</div>
-            <div>
-              <div class="muted">Email</div>
-              <a href="mailto:${CONFIG.owner.email}">${CONFIG.owner.email}</a>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="icon" aria-hidden>💼</div>
-            <div>
-              <div class="muted">LinkedIn</div>
-              <a href="${CONFIG.owner.linkedin}" target="_blank" rel="noopener">${CONFIG.owner.linkedin}</a>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="icon" aria-hidden>🐙</div>
-            <div>
-              <div class="muted">GitHub</div>
-              <a href="${CONFIG.owner.github}" target="_blank" rel="noopener">${CONFIG.owner.github}</a>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="icon" aria-hidden>✈️</div>
-            <div>
-              <div class="muted">Telegram</div>
-              <a href="${CONFIG.owner.telegram}" target="_blank" rel="noopener">${CONFIG.owner.telegram}</a>
-            </div>
-          </div>
+    <section class="page-top">
+      <span class="eyebrow">Who I am</span>
+
+      <h1 class="page-heading">
+        About me
+      </h1>
+
+      <p class="lead">
+        A bit about the person behind the code.
+      </p>
+    </section>
+
+    <div class="about-grid">
+      <section class="panel">
+        <h2>My background</h2>
+
+        <p>
+          I'm <strong>Nadiia Balitska</strong>, a full-stack
+          developer based in Oslo, Norway. I have a Bachelor's
+          degree in Computer Science from National Transport
+          University, studied Front-end Development at Noroff,
+          and have also taken Information Technology courses
+          at OsloMet.
+        </p>
+
+        <p>
+          I work with both frontend and backend development,
+          and I like being involved in the whole process —
+          from the first idea to a working application.
+          I've gained hands-on experience through real
+          projects, teamwork, and a full-stack internship.
+          I'm always up for a new challenge, especially
+          when it involves figuring out how things work
+          (or why they suddenly don't).
+        </p>
+
+        <p>
+          Right now, I'm looking for opportunities to grow
+          as a developer, work with a great team, and build
+          something genuinely useful.
+
+          <strong>
+            Have a project in mind or think we'd make a
+            good team? Feel free to reach out — I'd love
+            to chat!
+          </strong>
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Let's connect</h2>
+
+        <p>
+          Curious about my work? Explore the projects or
+          drop me a message. I'm always happy to talk about
+          web development and potential collaborations.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-outline" href="#/projects">
+            See my projects ↗
+          </a>
+
+          <a class="btn btn-outline" href="#/contact">
+            Contact me ↗
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Technical stack</h2>
+
+          <p class="muted">
+            Tools I use across frontend, backend, and delivery.
+          </p>
         </div>
       </div>
 
-  
-    </div>`;
+      ${stacks()}
+    </section>
+  `;
 }
 
-const dlg = document.getElementById("projDialog");
-function bindDynamic() {
-  document.querySelectorAll("[data-proj]")?.forEach((btn) =>
-    btn.addEventListener("click", () => {
-      const p = CONFIG.projects.find((x) => x.key === btn.dataset.proj);
-      if (!p) return;
-      document.getElementById("dlgTitle").textContent = p.title + " — Evidence";
-      const list = document.getElementById("dlgList");
-      const links = [
-        { label: "GitHub Repository", url: p.repo },
-        { label: "Live Demo", url: p.live },
-        ...p.improvements.map((i) => ({
-          label: `Improvement: ${i.label}`,
-          url: i.commit,
-        })),
-      ];
-      list.innerHTML = links
-        .map(
-          (l) =>
-            `<a href="${l.url}" target="_blank" rel="noopener"><span>${l.label}</span><span>↗</span></a>`,
-        )
-        .join("");
-      dlg.showModal();
-    }),
+// ==========================================
+// CONTACT PAGE
+// ==========================================
+
+function contact() {
+  const socials = [
+    [
+      'Email',
+      owner.email,
+      `mailto:${owner.email}`
+    ],
+    [
+      'GitHub',
+      'github.com/Nadiia-balitska',
+      owner.github
+    ],
+    [
+      'LinkedIn',
+      'linkedin.com/in/nadiia-balitska',
+      owner.linkedin
+    ],
+    [
+      'Telegram',
+      '@nadiia_balitska',
+      owner.telegram
+    ]
+  ];
+
+  return `
+    <section class="page-top">
+      <span class="eyebrow">Contact</span>
+
+      <h1 class="page-heading">
+        Let's get in touch.
+      </h1>
+
+      <p class="lead">
+        Interested in working together or want to talk
+        about an opportunity? Send me a message.
+      </p>
+
+      <div class="actions">
+        <a
+          class="btn btn-primary"
+          href="mailto:${owner.email}"
+        >
+          Send an email ↗
+        </a>
+      </div>
+    </section>
+
+    <div class="contact-links">
+      ${socials
+        .map(([name, label, url]) => `
+          <a
+            class="contact-link"
+            href="${url}"
+            ${
+              url.startsWith('http')
+                ? 'target="_blank" rel="noopener noreferrer"'
+                : ''
+            }
+          >
+            <span>${name}</span>
+            <strong>${escapeHTML(label)} ↗</strong>
+          </a>
+        `)
+        .join('')}
+    </div>
+  `;
+}
+
+// ==========================================
+// PROJECT ARTICLE
+// ==========================================
+
+function linkButton(url, label, primary = false) {
+  if (!validUrl(url)) {
+    return '';
+  }
+
+  return `
+    <a
+      class="btn ${primary ? 'btn-primary' : 'btn-outline'}"
+      href="${escapeHTML(url)}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ${label} ↗
+    </a>
+  `;
+}
+
+function article(slug) {
+  const project = projects.find(
+    (item) => item.slug === slug
   );
 
-  const form = document.getElementById("contactForm");
-  if (form) {
-    const btn = document.getElementById("sendBtn");
-    const note = document.getElementById("formNote");
-    const ta = form.querySelector("textarea");
+  if (!project) {
+    return notFound();
+  }
 
-    const autosize = () => {
-      ta.style.height = "auto";
-      ta.style.height = ta.scrollHeight + "px";
-    };
-    ta?.addEventListener("input", autosize);
-    autosize();
+  return `
+    <article class="article-shell">
+      <a class="back" href="#/projects">
+        ← Back to projects
+      </a>
 
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (!form.reportValidity()) {
-        note.textContent = "Please fix validation errors.";
-        return;
+      <div
+        class="eyebrow"
+        style="margin-top: 25px"
+      >
+        Project case study
+      </div>
+
+      <h1>${escapeHTML(project.title)}</h1>
+
+      <p class="lead">
+        ${escapeHTML(project.teaser)}
+      </p>
+
+      ${tags(project.tech)}
+
+      <div class="article-actions">
+        ${linkButton(project.live, 'Live site', true)}
+        ${linkButton(project.repo, 'GitHub / README')}
+        ${linkButton(project.back, 'Backend repository')}
+
+        <button
+          class="btn btn-outline"
+          id="copyLink"
+          type="button"
+        >
+          Copy project link ↗
+        </button>
+      </div>
+
+      <div
+        role="status"
+        id="copyStatus"
+        class="copy-status"
+        aria-live="polite"
+      ></div>
+
+      <figure class="article-figure">
+        <img
+          src="${escapeHTML(project.thumb)}"
+          alt="Screenshot of ${escapeHTML(project.title)}"
+          onerror="this.style.display='none'"
+        />
+
+        <figcaption>
+          ${escapeHTML(project.title)} — project screenshot.
+        </figcaption>
+      </figure>
+
+      <div class="article-body">
+        <h2>Overview</h2>
+
+        <p>${escapeHTML(project.teaser)}</p>
+
+        <h2>Technology</h2>
+
+        <p>
+          ${escapeHTML(project.tech.join(' · '))}
+        </p>
+
+        <h2>Source code & demo</h2>
+
+        <p>
+          Use the links above to explore the repository,
+          README and live application where available.
+        </p>
+
+        <h2>Explore the project</h2>
+
+        <p>
+          For implementation details and updates, see
+          the source repository and its README linked above.
+        </p>
+      </div>
+    </article>
+  `;
+}
+
+// ==========================================
+// NOT FOUND
+// ==========================================
+
+const notFound = () => {
+  return `
+    <section class="page-top">
+      <h1>Page not found</h1>
+
+      <p class="muted">
+        This page doesn't exist.
+      </p>
+
+      <a class="btn btn-primary" href="#/home">
+        Return home
+      </a>
+    </section>
+  `;
+};
+
+// ==========================================
+// ROUTER
+// ==========================================
+
+function router() {
+  const pathname = decodeURIComponent(
+    (location.hash || '#/home').slice(1)
+  ).replace(/\/+$/, '') || '/home';
+
+  let title = 'Portfolio';
+
+  if (pathname === '/home') {
+    view.innerHTML = home();
+    title = 'Home';
+
+  } else if (pathname === '/projects') {
+    view.innerHTML = listing();
+    title = 'Projects';
+
+  } else if (pathname === '/about') {
+    view.innerHTML = about();
+    title = 'About';
+
+  } else if (pathname === '/contact') {
+    view.innerHTML = contact();
+    title = 'Contact';
+
+  } else if (pathname.startsWith('/project/')) {
+    const slug = pathname.slice('/project/'.length);
+
+    view.innerHTML = article(slug);
+
+    title = projects.find(
+      (project) => project.slug === slug
+    )?.title || 'Project';
+
+  } else {
+    view.innerHTML = notFound();
+    title = 'Not found';
+  }
+
+  document.title = `${title} | ${owner.name}`;
+
+  document.querySelectorAll('[data-route]').forEach((link) => {
+    if (link.getAttribute('href') === '#' + pathname) {
+      link.setAttribute('aria-current', 'page');
+    } else {
+      link.removeAttribute('aria-current');
+    }
+  });
+
+  routerBind();
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant'
+  });
+
+  document.getElementById('main').focus({
+    preventScroll: true
+  });
+}
+
+// ==========================================
+// DYNAMIC EVENTS
+// ==========================================
+
+function routerBind() {
+  const copyButton = view.querySelector('#copyLink');
+
+  if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+      const status = view.querySelector('#copyStatus');
+
+      try {
+        await navigator.clipboard.writeText(location.href);
+
+        status.textContent = 'Project link copied.';
+      } catch {
+        status.textContent =
+          'Copy is unavailable here. Please use the browser address bar.';
       }
-      btn.disabled = true;
-      btn.textContent = "Sending…";
-      const data = Object.fromEntries(new FormData(form).entries());
-      const body = encodeURIComponent(
-        data.message + "\n\n— " + data.name + "\n" + data.email,
-      );
-      location.href = `mailto:${CONFIG.owner.email}?subject=Portfolio%20Contact%20from%20${encodeURIComponent(data.name)}&body=${body}`;
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.textContent = "Send";
-        note.textContent =
-          "Thanks! Your message is ready in your email client.";
-      }, 600);
     });
   }
-
-  if (location.hash.includes("#") && location.hash.split("#")[2]) {
-    const id = location.hash.split("#")[2];
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-      el.classList.add("highlight");
-      setTimeout(() => el.classList.remove("highlight"), 1800);
-    }
-  }
 }
+
+// ==========================================
+// INITIALIZATION
+// ==========================================
+
+function init() {
+  document.getElementById('yr').textContent =
+    new Date().getFullYear();
+
+  const savedTheme = localStorage.getItem('portfolio-theme');
+
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.dataset.theme = savedTheme;
+  }
+
+  const toggle = document.getElementById('theme');
+
+  const updateThemeButton = () => {
+    const isLight =
+      document.documentElement.dataset.theme === 'light';
+
+    toggle.textContent = isLight ? '☾' : '☼';
+
+    toggle.setAttribute(
+      'aria-label',
+      isLight ? 'Switch to dark theme' : 'Switch to light theme'
+    );
+
+    toggle.setAttribute(
+      'aria-pressed',
+      String(isLight)
+    );
+  };
+
+  toggle.addEventListener('click', () => {
+    document.documentElement.dataset.theme =
+      document.documentElement.dataset.theme === 'light'
+        ? 'dark'
+        : 'light';
+
+    localStorage.setItem(
+      'portfolio-theme',
+      document.documentElement.dataset.theme
+    );
+
+    updateThemeButton();
+  });
+
+  updateThemeButton();
+  router();
+}
+
+// ==========================================
+// EVENT LISTENERS
+// ==========================================
+
+window.addEventListener('hashchange', router);
+document.addEventListener('DOMContentLoaded', init);
